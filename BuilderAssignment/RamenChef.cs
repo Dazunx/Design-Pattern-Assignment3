@@ -1,4 +1,4 @@
-﻿using BuilderAssignment.Builders;
+﻿using BuilderAssignment.Builders;                                                                                                                                                                              
 using BuilderAssignment.Models;
 
 namespace BuilderAssignment
@@ -8,8 +8,14 @@ namespace BuilderAssignment
         public RamenBowl PrepareRamen(IRamenBuilder builder)
         {
             //TODO#1: Call each builder step declared in RamenBuilder class
+            builder.setBroth();
+            builder.setNoodle();
+            builder.addToppings();
+            builder.addExtra();
+
+            RamenBowl buildBowl = builder.GetRamen();
             
-            return null; //TODO#2: Finaly return build bowl of ramen
+            return buildBowl; //TODO#2: Finaly return build bowl of ramen
         }
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace BuilderAssignment.Models
+﻿using static BuilderAssignment.Models.RamenBowl;
+
+namespace BuilderAssignment.Models
 {
     /// <summary>
     /// Enum values for Broth types
